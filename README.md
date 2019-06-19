@@ -39,6 +39,6 @@ title = "Hugo Blog Starter kit"
 
 以下のページで解説しています。
 
-https://nasust.com
+[Hugoテーマの公開 \| nasust dev blog](http://localhost:1313/hugo/theme/public_template/)
 
 
