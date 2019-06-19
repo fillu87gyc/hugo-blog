@@ -1,0 +1,43 @@
+baseURL = "https://example.jp/"
+title = "Hugo Blog Starter kit"
+defaultContentLanguage = "ja"
+languageCode = "ja-jp"
+disablePathToLower = true
+hasCJKLanguage = true
+pluralizeListTitles = false
+pygmentsUseClasses = true
+pygmentsCodefences = true
+theme = "basic-design-personal-blog"
+
+[outputs]
+    page = [ "HTML" , "AMP"  ]
+    
+[Params]
+    profile_image = "images/blank-profile.png"
+    eyecatch = "images/eyecache.jpg"
+    author = "hugo blog"
+
+[taxonomies]
+    tag = "tags"
+
+[permalinks]
+    post = "/:section/:year/:month/:filename"
+
+[blackfriday]
+    hrefTargetBlank = true
+    nofollowLinks = true
+    extensionsmask = ["autolink"]
+
+[menu]
+    [[menu.global_header]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.global_header]]
+        name = "Blog"
+        url = "/post"
+        weight = 2
+
+
+
+
