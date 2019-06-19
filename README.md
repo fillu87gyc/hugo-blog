@@ -6,6 +6,8 @@ Hugoで簡単にブログを初められるように作成したレポジトリ�
 
 ## ダウンロード
 
+[ダウンロード](https://github.com/nasust/hugo-blog-starter-kit/archive/v0.1.zip)
+
 ## git clone
 
 ``git clone --recursive git@github.com:nasust/hugo-blog-starter-kit.git``
