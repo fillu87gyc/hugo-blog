@@ -24,8 +24,8 @@ config.tomlで必要な設定は入力済みです。
 以下の内容を、あなたのサイトに合わせて設定してください。
 
 ```toml
-baseURL = "http://example.org/"
-title = "Simple Plain Blog"
+baseURL = "https://example.jp/"
+title = "Hugo Blog Starter kit"
 [Params]
     profile_image = "images/blank-profile.png"
     eyecatch = "images/eyecache.jpg"
