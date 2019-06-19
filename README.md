@@ -4,6 +4,8 @@ Hugoで簡単にブログを初められるように作成したレポジトリ�
 
 ダウンロードして展開するだけでブログを初められます。
 
+
+
 ## ダウンロード
 
 [ダウンロード](https://github.com/nasust/hugo-blog-starter-kit/archive/v0.1.zip)
@@ -12,10 +14,14 @@ Hugoで簡単にブログを初められるように作成したレポジトリ�
 
 ``git clone --recursive git@github.com:nasust/hugo-blog-starter-kit.git``
 
+## 含まれているテーマ
+
+[nasust/basic\-design\-personal\-blog: Hugo Theme Basic Design Personal Blog](https://github.com/nasust/basic-design-personal-blog)
+
 ## 初期設定
 
 config.tomlで必要な設定は入力済みです。
-以下の内容は、あなたのサイトに合わせて設定してください。
+以下の内容を、あなたのサイトに合わせて設定してください。
 
 ```toml
 baseURL = "http://example.org/"
