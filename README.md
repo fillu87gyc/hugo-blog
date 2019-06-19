@@ -37,6 +37,8 @@ title = "Simple Plain Blog"
 
 ## 記事の書き方の解説
 
+以下のページで解説しています。
+
 https://nasust.com
 
 
