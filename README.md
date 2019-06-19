@@ -35,4 +35,8 @@ title = "Simple Plain Blog"
 
 自己紹介の文章をcontent/profile.txtに書いて下さい。
 
+## 記事の書き方の解説
+
+https://nasust.com
+
 
