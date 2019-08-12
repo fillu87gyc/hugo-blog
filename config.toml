@@ -37,6 +37,10 @@ theme = "basic-design-personal-blog"
         name = "Blog"
         url = "/post"
         weight = 2
+    [[menu.global_header]]
+        name = "About"
+        url = "/about"
+        weight = 3
 
 
 

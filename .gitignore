@@ -3,3 +3,5 @@
 public/
 *_gen/
 *.sass-cache/
+
+themes/
