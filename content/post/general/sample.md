@@ -2,7 +2,7 @@
 title: "ダミータイトル"
 date: 2019-06-17
 draft: false
-tags: ["dummy tag 1" , "dummy tag 2" ] 
+tags: ["dummy tag 1" , "dummy tag 2", "hogehoge"] 
 ---
 
 吾輩は猫である。
