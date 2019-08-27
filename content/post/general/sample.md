@@ -1,7 +1,7 @@
 ---
 title: "ダミータイトル"
 date: 2019-06-17
-draft: false
+draft: true
 tags: ["dummy tag 1" , "dummy tag 2", "hogehoge"] 
 ---
 

@@ -1,5 +1,5 @@
-baseURL = "https://example.jp/"
-title = "Hugo Blog Starter kit"
+baseURL = "https://fillu87gyc.github.io/"
+title = "チラシの裏に書かなくてもいいようなこと"
 defaultContentLanguage = "ja"
 languageCode = "ja-jp"
 disablePathToLower = true
@@ -15,7 +15,7 @@ theme = "basic-design-personal-blog"
 [Params]
     profile_image = "images/blank-profile.png"
     eyecatch = "images/eyecache.jpg"
-    author = "hugo blog"
+    author = "結城かえで"
 
 [taxonomies]
     tag = "tags"
@@ -41,7 +41,3 @@ theme = "basic-design-personal-blog"
         name = "About"
         url = "/about"
         weight = 3
-
-
-
-
