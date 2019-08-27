@@ -20,14 +20,5 @@
       <description>Hello world! こんにちは、ブログを書きたいと考え早3ヶ月たったわけで。 とりえあえず自己紹介します。 もくじ 自己紹介 もの こと お名前 結城かえで がっこう 仙台高</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://fillu87gyc.github.io/hugo-blog/about/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://fillu87gyc.github.io/hugo-blog/about/test/</guid>
-      <description> aa $ hogehoge  </description>
-    </item>
-    
   </channel>
 </rss>
