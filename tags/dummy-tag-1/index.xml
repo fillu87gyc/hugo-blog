@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dummy tag 1 on Hugo Blog Starter kit</title>
+    <link>https://example.jp/tags/dummy-tag-1/</link>
+    <description>Recent content in dummy tag 1 on Hugo Blog Starter kit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 17 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.jp/tags/dummy-tag-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ダミータイトル</title>
+      <link>https://example.jp/post/2019/06/sample/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.jp/post/2019/06/sample/</guid>
+      <description>吾輩は猫である。 名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。 ダ</description>
+    </item>
+    
+  </channel>
+</rss>
