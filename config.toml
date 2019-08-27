@@ -1,5 +1,5 @@
 baseURL = "https://fillu87gyc.github.io/"
-title = "チラシの裏に書かなくてもいいようなこと"
+title = "adsの裏側"
 defaultContentLanguage = "ja"
 languageCode = "ja-jp"
 disablePathToLower = true
@@ -13,7 +13,7 @@ theme = "basic-design-personal-blog"
     page = [ "HTML" , "AMP"  ]
     
 [Params]
-    profile_image = "images/blank-profile.png"
+    profile_image = "images/icon.jpg"
     eyecatch = "images/eyecache.jpg"
     author = "結城かえで"
 
