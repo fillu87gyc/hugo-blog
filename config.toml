@@ -1,5 +1,5 @@
 baseURL = "https://fillu87gyc.github.io/"
-title = "adsの裏側"
+title = "ADSの裏側"
 defaultContentLanguage = "ja"
 languageCode = "ja-jp"
 disablePathToLower = true
@@ -34,10 +34,14 @@ theme = "basic-design-personal-blog"
         url = "/"
         weight = 1
     [[menu.global_header]]
-        name = "Blog"
-        url = "/post"
-        weight = 2
-    [[menu.global_header]]
         name = "About"
         url = "/about"
+        weight = 2
+    [[menu.global_header]]
+        name = "Blog"
+        url = "/blog"
         weight = 3
+    [[menu.global_header]]
+        name = "Tech"
+        url = "/tech"
+        weight = 4
