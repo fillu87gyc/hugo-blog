@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ADSの裏側</title>
-    <link>https://fillu87gyc.github.io/hugo-blog/</link>
-    <description>Recent content on ADSの裏側</description>
+    <title>Tech on ADSの裏側</title>
+    <link>https://fillu87gyc.github.io/hugo-blog/tech/</link>
+    <description>Recent content in Tech on ADSの裏側</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 29 Aug 2019 18:15:00 +0900</lastBuildDate>
     
-	<atom:link href="https://fillu87gyc.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fillu87gyc.github.io/hugo-blog/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://fillu87gyc.github.io/hugo-blog/tech/hugo1/</guid>
       <description>はじめに こんにちは、いつまで続けられるかは不明ですが、頑張りたいと思います。 さて、今回ですがこのblogについてのお話です。 全体の構成と採用</description>
-    </item>
-    
-    <item>
-      <title>はじめに</title>
-      <link>https://fillu87gyc.github.io/hugo-blog/about/first/</link>
-      <pubDate>Tue, 27 Aug 2019 12:21:36 +0900</pubDate>
-      
-      <guid>https://fillu87gyc.github.io/hugo-blog/about/first/</guid>
-      <description>Hello world! こんにちは、ブログを書きたいと考え早3ヶ月たったわけで。 とりえあえず自己紹介します。 自己紹介 もの こと お名前 結城かえで がっこう 仙台高専(オ</description>
     </item>
     
   </channel>
