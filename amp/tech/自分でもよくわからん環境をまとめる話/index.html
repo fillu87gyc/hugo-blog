@@ -5,9 +5,9 @@
 
         <meta charset="utf-8" />
         <script async src="https://cdn.ampproject.org/v0.js"></script>
-        <title>はじめに | ADSの裏側</title>
+        <title>自分でもよくわからん環境をまとめる話 | ADSの裏側</title>
         
-            <link rel="canonical" href="https://fillu87gyc.github.io/hugo-blog/about/first/" />
+            <link rel="canonical" href="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" />
         
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
 
@@ -20,13 +20,13 @@
                 "@type": "NewsArticle",
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https:\/\/fillu87gyc.github.io\/hugo-blog\/about\/first\/"
+                    "@id": "https:\/\/fillu87gyc.github.io\/hugo-blog\/tech\/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1\/"
                 },
-                "headline": "はじめに",
+                "headline": "自分でもよくわからん環境をまとめる話",
                 
-                "image": ["https:\/\/fillu87gyc.github.io\/hugo-blog\/images\/eyecache.0730897ec0497d411d95b3ee426c296000abe79e0b8dc61c0c6b7f158b8c7df5.jpg"],
+                "image": ["https:\/\/fillu87gyc.github.io\/hugo-blog\/images\/hoa.1ae84409d92125d78759dd5d4a3cb7e2961bf97555d2486d865b98c53c29e78a.jpg"],
                 
-                "datePublished": "2019-08-27T12:21:36"},
+                "datePublished": "2019-09-03T11:38:31"},
                 "author": {
                     "@type": "Person",
                     "name": "結城かえで"
@@ -60,171 +60,337 @@
         <div class="m-entry__header">
             <div class="m-entry__header-category">
                 <span class="m-entry__header-category-title">
-                    About
+                    Tech
                 </span>
             </div>
             <div class="m-entry__header-title">
-                <a class="m-entry__header-title-link" href="https://fillu87gyc.github.io/hugo-blog/amp/about/first/" >
-                    <h1 class="m-entry__header-title-link-text">はじめに</h1>
+                <a class="m-entry__header-title-link" href="https://fillu87gyc.github.io/hugo-blog/amp/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" >
+                    <h1 class="m-entry__header-title-link-text">自分でもよくわからん環境をまとめる話</h1>
                 </a>
             </div>
             <div class="m-entry__header-date">
-                <time>2019/08/27</time>
+                <time>2019/09/03</time>
             </div>
 
             
             
                 <div class="m-entry__header-eyecache">
-                    <amp-img src="https://fillu87gyc.github.io/hugo-blog/images/eyecache.0730897ec0497d411d95b3ee426c296000abe79e0b8dc61c0c6b7f158b8c7df5.jpg" width="1280" height="853" layout="responsive" />
+                    <amp-img src="https://fillu87gyc.github.io/hugo-blog/images/hoa.1ae84409d92125d78759dd5d4a3cb7e2961bf97555d2486d865b98c53c29e78a.jpg" width="1280" height="720" layout="responsive" />
                 </div>
             
         </div>
         <div class="m-entry__content">
             
 
-<h1 id="hello-world">Hello world!</h1>
+<h1 id="初めに">初めに</h1>
 
-<p>こんにちは、ブログを書きたいと考え早3ヶ月たったわけで。
-とりえあえず自己紹介します。</p>
+<p>windows -&gt; mac -&gt; linux(manjaro)と移動してきて大体思い返せば4年ぐらいの秘伝のソースが出来上がっています。</p>
 
-<h2 id="自己紹介">自己紹介</h2>
+<p>そうなるとshellだけでもsodだawkだでバコバコ書いたあんまり覚えてないけど無いと動かないコードとか<br />
+毎回環境作り直す時に泣き目を見るアレがあったりと面倒になったので一旦まとめたくなりました</p>
 
-<table>
-<thead>
-<tr>
-<th>もの</th>
-<th>こと</th>
-</tr>
-</thead>
+<h2 id="shell">shell</h2>
 
-<tbody>
-<tr>
-<td>お名前</td>
-<td>結城かえで</td>
-</tr>
+<p>1年ほど前？にmacを買ったときにshellを((ba)|z)?shの系譜のif/fiだのtestだのに嫌気がさしたり<br />
+ゴテゴテになったbash_profile/bashrcをwindowsから引っ張ってくるので<br />
+pathがバクスラかスラッシュとかで心機一転fishに移動しました</p>
 
-<tr>
-<td>がっこう</td>
-<td>仙台高専(オタクが多いキャンパス)</td>
-</tr>
-
-<tr>
-<td>おとし</td>
-<td>20世紀少年</td>
-</tr>
-
-<tr>
-<td>すきなこと</td>
-<td>お酒 RoR (n)vim ぽけもん あいのり</td>
-</tr>
-
-<tr>
-<td>きらいなこと</td>
-<td>テラスハウス パチンコ windows emacs</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="サイト">サイト</h2>
-
-<table>
-<thead>
-<tr>
-<th align="center">webさいと</th>
-<th align="center">url</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">github</td>
-<td align="center"><a href="https://github.com/fillu87gyc" rel="nofollow" target="_blank">github.com/fillu87gyc</a></td>
-</tr>
-
-<tr>
-<td align="center">twitter</td>
-<td align="center"><a href="https://twitter.com/yuuki__kaede" rel="nofollow" target="_blank">twitter.com/yuuki__kaede</a></td>
-</tr>
-
-<tr>
-<td align="center">email</td>
-<td align="center"><a href="mailto:s1500604@sendai.kosen-ac.jp" rel="nofollow" target="_blank">s1500604@sendai.kosen-ac.jp</a></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="できること">できること</h2>
+<p>fishの特徴的な部分としては</p>
 
 <ul>
-<li>組み込み系
-
-<ul>
-<li>C/C++</li>
-<li>mbed</li>
-<li>Arduino</li>
-</ul></li>
-<li>Microsoftまわり
-
-<ul>
-<li>C#</li>
-<li>windows form</li>
-<li>wpf</li>
-<li>Xamarin-Android</li>
-</ul></li>
-<li>Webとか
-
-<ul>
-<li>Ruby on Rails</li>
-</ul></li>
-<li>はろーわーるど(気持ち分かるかも)
-
-<ul>
-<li>shell/awk</li>
-<li>fish shell</li>
-<li>html/bootstrap</li>
-<li>sql</li>
-<li>PHP</li>
-<li>vim script</li>
-</ul></li>
+<li>POSIX互換でないこと</li>
+<li>後発であるためにデフォルトでもちょっと頑張れる</li>
 </ul>
 
-<h2 id="経歴">経歴</h2>
+<p>でしょうか。</p>
 
-<h3 id="2015-高専1年生">2015: 高専1年生</h3>
+<p>posix互換でない部分は正直結構うーんって感じですね。<br />
+たまにあるfishだけ未対応とかどうしようもない部分が面倒だなって思いますが、<br />
+有志が互換もどきをつくったりしているのでissueとかgoogle様を信じて検索するのみです。</p>
 
-<p>寮生の闇に触れる。あとは間違えてロボコンとかした<br />
-ここでfillu87gycのアカウントを作るなどした<br />
-ロボコンで東北交流会とか行った、あと全国の見学もした</p>
+<p>いいところとしてデフォルトでちょっと強い部分はtab補完が強いなって感じです。<br />
+bashなどのtab補完というより、fuzzyみたいな感じでよしなに補完してくれるのがありがたいです。</p>
 
-<h3 id="2016-2年生">2016: 2年生</h3>
+<p>では、ここでconfig.fishを公開します。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish"><span class="nb">alias </span><span class="nv">vi</span><span class="o">=</span><span class="s1">&#39;nvim&#39;</span>
+<span class="nb">alias open</span><span class="o">=</span><span class="s1">&#39;thunar&#39;</span>
 
-<p>高専生活にも大体慣れ始める<br />
-  <a href="https://rebirth-tohoku.doorkeeper.jp/events/43853" rel="nofollow" target="_blank">MS主催のイベント</a>に参加して刺激を受ける<br />
-  ここらへんで、ロボコンの心がWPFだのC#だのVSだのに持っていきはじめる<br />
-  ロボコンのチームリーダーとかやったりもする。アイディア賞もらったときに全国行ったとおもってちゃんと喜んだのはここだけの話<br />
-  東北交流会では自己紹介で彼女が欲しい！！見たいなことを書いていたような気がする。<br />
-  完全に浮いていた <del>(去年までもっとみんなふざけてましたよね？？)</del><br />
-  尖りすぎて高校生レビューなんてハッシュタグで高専コンプを発動させていた<br />
-  人間関係とかいろいろで退部。プロ部に顔をだしはじめる。</p>
+<span class="nb">status</span> --is-interactive<span class="p">;</span> <span class="k">and</span> <span class="nb">source</span> <span class="o">(</span>rbenv init -<span class="o">|</span><span class="nb">psub</span><span class="o">)</span>
 
-<h3 id="2017-3年生">2017: 3年生</h3>
+<span class="k">set</span> -g fish_prompt_pwd_dir_length 0
+<span class="k">set</span> -g theme_newline_cursor yes
+<span class="k">set</span> -g theme_display_git_master_branch yes
+<span class="k">set</span> -g GTK_IM_MODULE ibus
+<span class="k">set</span> -g XMODIFIERS @im<span class="o">=</span>ibus
+<span class="k">set</span> -g QT_IM_MODULE ibus
 
-<p>proconに初めて参加する。予選通過はできず(当時のプロダクトは現在でも黒歴史としてアンチパターンの代名詞になっている)<br />
-  出戻りでロボコンの部長になるものの、顧問バトルに疲弊し頭がおかしくなり退部(同じ部活を2度止めた男)<br />
-  モバイル開発に燃えていたのでXamarin/Androidで<a href="https://twitter.com/ryoshokubot" rel="nofollow" target="_blank">寮食BOT</a>を作る</p>
+<span class="k">set</span> PATH /home/fill/go/bin <span class="nv">$PATH</span>
 
-<h3 id="2018-4年生">2018: 4年生</h3>
+<span class="k">function</span> <span class="nb">fish_right_prompt</span><span class="p">;</span> <span class="k">end</span>
 
-<p>この時期からwebに将来を感じ始める。
-  procon29に課題部門で全国に進出する。
-  が、高専祭実行委員に任命されていたので本選にいくことはできないのであきらめる。
-  そして企業賞でswitchをもらったりしたらしい</p>
+<span class="nb">alias </span><span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
+<span class="nb">alias </span><span class="nv">t</span><span class="o">=</span><span class="s1">&#39;tmux&#39;</span>
+<span class="nb">alias </span><span class="nv">tm</span><span class="o">=</span><span class="s1">&#39;tmuximum&#39;</span>
+<span class="nb">alias </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -altFG&#39;</span>
+<span class="nb">alias </span><span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;hub browse&#39;</span>
+<span class="nb">alias </span><span class="nv">gis</span><span class="o">=</span><span class="s1">&#39;hub issue&#39;</span>
+<span class="nb">alias </span><span class="nv">gisc</span><span class="o">=</span><span class="s1">&#39;hub issue create -oc&#39;</span>
+<span class="nb">alias </span><span class="nv">ag</span><span class="o">=</span><span class="s1">&#39;ag --hidden --smart-case&#39;</span>
+<span class="nb">alias </span><span class="nv">reload</span><span class="o">=</span><span class="s1">&#39;source ~/.config/fish/config.fish; and echo reload!!&#39;</span>
+<span class="nb">alias </span><span class="nv">re</span><span class="o">=</span><span class="s1">&#39;reload&#39;</span>
+<span class="nb">alias </span>a.out<span class="o">=</span><span class="s1">&#39;./a.out&#39;</span>
+<span class="nb">alias </span><span class="nv">so</span><span class="o">=</span><span class="s1">&#39;source&#39;</span>
+<span class="nb">alias </span><span class="nv">mkdir</span><span class="o">=</span><span class="s1">&#39;mkdir -p&#39;</span>
+<span class="nb">alias </span><span class="nv">iftop</span><span class="o">=</span><span class="s1">&#39;sudo iftop -i wlp3s0&#39;</span>
+<span class="nb">alias </span><span class="nv">sp</span><span class="o">=</span><span class="s1">&#39;bash ~/src/dotfiles/bin/shell/vim-speedtest.sh&#39;</span>
+<span class="nb">alias </span><span class="nv">gl</span><span class="o">=</span><span class="s1">&#39;git log --color --graph --pretty=format:&#34;%C(red reverse)%d%Creset%C(white reverse) \
+</span><span class="s1">%h% Creset %C(green reverse) %an&lt;@%cn&gt; %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80) \
+</span><span class="s1">%s%Creset%n%n%w(80,2,2)%b&#34; | emojify | less -r&#39;</span>
+<span class="k">function</span> g --wraps git
+  hub <span class="nv">$argv</span><span class="p">;</span>
+<span class="k">end</span></code></pre></div>
+<p>ほとんどaliasなのでほぼデフォルトってわかるかと。プラグインのリストはこんな感じです</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ fisher ls
+0rax/fish-bd
+decors/fish-ghq
+jethrokuan/fzf
+jethrokuan/z
+oh-my-fish/theme-bobthefish</code></pre></div>
+<p>有名どころを入れるだけで特に面倒なことはしていない感じです</p>
 
-<h3 id="2019-5年生">2019: 5年生</h3>
+<p>fzfはzと組み合わせてディレクトリ移動にしたり、ちょっと深いファイルを編集するのにpath書きたくないんで使っています。<br />
+fish-bdは../..ぐらいで事足りているので最近使っていない&hellip;</p>
 
-<p>受験で無駄に頭がおかしくなる。推薦をもらえていたので今考えればまあ安心なのだけど当時は不安で2chから内部生のtwitterまですべてをストーキングしていた。tut/豊橋/技化大かなんかでツイートした人はおそらく一回は見ている<br />
-  専攻科の受験日から週末をはさんですぐtutの合格発表があったので来年の入試がかりは何とかして欲しいところではある<br />
-  procon30に復帰する。今年は自由部門で本選にいけることになった。今年は高専祭実行委員の幹部じゃないのでちゃんと現地にいけるので楽しみです。</p>
+<h2 id="tmux">tmux</h2>
+
+<p>tmuxは本当に縁の下の力持ちです。無いと本当にしんどい。
+主な使い方はペインは切らないでwindowアホみたいに作ってバシバシ切り替える感じです。
+thinkpad君は1280*720?なのでペインを切ると改行されまくって感情になるので。</p>
+
+<p>設定は以下のとおりです。</p>
+<div class="highlight"><pre class="chroma"><code class="language-conf" data-lang="conf">run-shell &#34;powerline-daemon -q&#34;
+source &#34;/usr/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf&#34;
+#     
+#     #---general
+set -g default-terminal screen-256color
+set -g terminal-overrides &#39;xterm:colors=256&#39;
+unbind C-b
+set -g prefix C-q
+set -s escape-time 0
+set -g base-index 1
+set -g renumber-windows on
+setw -g pane-base-index 1
+bind r source-file ~/.tmux.conf \; display &#34;Reloaded!&#34;
+
+set-option -g status on
+set-option -g status-interval 1
+set-option -g status-justify &#34;left&#34;
+set-option -g status-left-length 40
+set-option -g status-right-length 100
+## メッセージの表示時間
+set-option -g display-time 1300
+
+#------ペイン/ウィンドウ移動系--------
+bind \ split-window -h -c &#34;#{pane_current_path}&#34;
+bind - split-window -v -c &#34;#{pane_current_path}&#34;
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+bind-key C-w run-shell &#34;tmux next-window||tmux new-window -c #{pane_current_path}&#34;
+setw -g mouse
+
+# -----------------------------------
+set -g pane-border-style        fg=colour242,bg=black
+set -g pane-active-border-style fg=yellow,bg=black
+set -g message-style            fg=white,bg=black,bright
+set -g window-style             fg=colour240,bg=colour232
+set -g window-active-style      fg=white,bg=black
+
+set-window-option -g mode-keys vi</code></pre></div>
+<p>ショートカットはこれ</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">ショートカット</th>
+<th align="center">操作</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">c</td>
+<td align="center">新しいwindow</td>
+</tr>
+
+<tr>
+<td align="center">w</td>
+<td align="center">リスト表示</td>
+</tr>
+
+<tr>
+<td align="center">C-w</td>
+<td align="center">次のwindow OR 新しいwindow</td>
+</tr>
+
+<tr>
+<td align="center">r</td>
+<td align="center">設定ファイル読み込み</td>
+</tr>
+
+<tr>
+<td align="center">t</td>
+<td align="center">時計表示</td>
+</tr>
+
+<tr>
+<td align="center">[</td>
+<td align="center">コピーモード</td>
+</tr>
+
+<tr>
+<td align="center">z</td>
+<td align="center">全画面表示</td>
+</tr>
+</tbody>
+</table>
+
+<p>他にもいろいろあるかもしれないけどつかうのはこれぐらい</p>
+
+<p>tmuximumなるツールがあるので、それを使うと優秀かもしれない</p>
+
+<h2 id="git">git</h2>
+
+<p>とりあえずコンフィグはります</p>
+<div class="highlight"><pre class="chroma"><code class="language-gitconfig" data-lang="gitconfig">[user]
+  name  = fillu87gyc
+  email = XXXXXXXXXXXXXXX@XXXXXXX
+
+[alias]
+  st      = status
+  s       = status
+  cho     = checkout
+  chob    = checkout -b
+  b       = branch
+  p       = push
+  c       = commit
+  today   = log --oneline --since=&#39;15 hour ago&#39;
+  last    = log -1 HEAD
+  d       = diff HEAD
+  mg      = merge
+  ff      = merge --ff
+  db      = !git branch | grep -v &#39;master&#39; | xargs git branch -d 2&gt; /dev/null
+  pin     = push -u origin
+  rename  = commit --amend
+  ref     = reflog
+  delo    = push --delete origin
+  rget    = remote prune origin
+  lg      = log
+  l       = log
+  delcm   = reset --soft HEAD^
+  a       = add .
+[push]
+  default = simple
+
+[filter &#34;lfs&#34;]
+  process = git-lfs filter-process
+  required = true
+  clean   = git-lfs clean -- %f
+  smudge  = git-lfs smudge -- %f
+
+[core]
+  autoCRLF = false
+  editor = &#34;/usr/bin/nvim&#34;
+
+[commit]
+  template = ~/src/dotfiles/git/commit_template
+
+[init]
+  templatedir = ~/src/dotfiles/git/commit_template
+  
+[ghq]
+  root = ~/src
+
+[merge]
+  ff = false
+
+[pull]
+  ff = only</code></pre></div>
+<p>aliasのシェル芸みたいなのはどっかから拝借しています。結構使わないaliasあるので一回整理かなとコピーして思った次第です。</p>
+
+<p>よく使うのは <code>g pin master</code> とか <code>g a</code>(git add .)とか<code>g c</code>とかでしょうか。</p>
+
+<p>個人的に絵文字とか使ってわちゃわちゃしている方が好きなので以下のようなテンプレートをコミットログを打つときに表示させてます。(同一ファイルにあることでvimの補完に現れてくれるのでありがたい)一時期は :octocat: とか使ってたんですけど最近めっきり使わないですね。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">:
+
+
+<span class="c1"># ================= Emojis =================</span>
+<span class="c1"># :bug:                    バグ修正</span>
+<span class="c1"># :heavy_plus_sign:        小さな改良</span>
+<span class="c1"># :wrench:                 ツール導入による変更</span>
+<span class="c1"># :tada:                   盛大に祝うべき大きな機能追加</span>
+<span class="c1"># :construction:           工事中</span>
+<span class="c1"># :recycle:                リファクタリング</span>
+<span class="c1"># :books:                  ドキュメント（Documentation）</span>
+<span class="c1"># :art:                    デザインUI/UX(Accessibility)</span>
+<span class="c1"># :hourglass:              速度計測</span>
+<span class="c1"># :scissors:               機能・関数削除</span>
+<span class="c1"># :octocat:                master にマージ</span>
+<span class="c1"># :arrows_clockwise:       ファイル場所移動</span>
+<span class="c1"># :ambulance:              応急処置</span>
+<span class="c1"># :trollface:              トロールをしてしまった</span></code></pre></div>
+<h2 id="vim">vim</h2>
+
+<p>vimは新しい環境作るときにいい感じになるようにブラッシュアップしてるので結構適当
+とりあえずいつの間にか生えてた縁の下の力持ちから</p>
+
+<p>nvim + dein の<a href="https://github.com/Shougo" rel="nofollow" target="_blank">Shougo</a>様々の構成</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">なまえ</th>
+<th align="center">こうか</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Shougo/dein</td>
+<td align="center">基本ですね</td>
+</tr>
+
+<tr>
+<td align="center">Lokaltog/vim-easymotion</td>
+<td align="center">移動が楽になる奴です。</td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;tpope/vim-fugitive&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;airblade/vim-gitgutter&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;ryanoasis/vim-devicons&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;majutsushi/tagbar&rsquo;</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 
         </div>
     </article>

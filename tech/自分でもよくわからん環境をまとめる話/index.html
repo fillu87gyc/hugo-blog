@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <base href="https://fillu87gyc.github.io/hugo-blog/" />
+        <link rel="canonical" href="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="amphtml" type="text/html" href="https://fillu87gyc.github.io/hugo-blog/amp/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/">
+        <title> 
+            自分でもよくわからん環境をまとめる話 | ADSの裏側
+        </title>
+
+        
+        
+            
+        
+        
+            <meta name="description" content="初めに windows -&gt; mac -&gt; linux(manjaro)と移動してきて大体思い返せば4年ぐらいの秘伝のソースが出来上がっています。 そうなるとshellだけ" />
+        
+
+        
+            <meta name="author" content="結城かえで" />
+        
+
+        
+<meta property="og:title" content="自分でもよくわからん環境をまとめる話 | ADSの裏側" />
+
+
+    <meta property="og:type" content="article" />
+
+
+<meta property="og:url" content="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" />
+
+
+
+    
+
+
+
+<meta property="og:site_name" content="ADSの裏側" />
+
+
+
+    
+
+
+    <meta property="og:description" content="初めに windows -&gt; mac -&gt; linux(manjaro)と移動してきて大体思い返せば4年ぐらいの秘伝のソースが出来上がっています。 そうなるとshellだけ" />
+
+
+
+
+        
+<link rel="stylesheet" href="https://fillu87gyc.github.io/hugo-blog/css/reset.524633911eadaf3cb674408574038ab61826bbd094638faef366ddcaf13e56ab.css" />
+
+
+<link rel="stylesheet" href="https://fillu87gyc.github.io/hugo-blog/scss/style.6fafe13787199690825d86f18b235f73b9798305dd304968f1d19fc65820d298.css" />
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.2/css/all.css"/></noscript>
+
+<!-- loadCSS. [c]2017 Filament Group, Inc. MIT License -->
+<script>
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(a){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.addEventListener?t.removeEventListener("load",e):t.attachEvent&&t.detachEvent("onload",e),t.setAttribute("onload",null),t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+
+    </head>
+    <body class="m-body">
+        <header class="m-global-header">
+            <div class="m-logo">
+    <a class="m-logo__link" href="/" >ADSの裏側</a>
+</div>
+<div class="m-global-menu">
+    
+    <nav class="m-global-menu__navigation" >
+        <ul class="m-global-menu__navigation-list">
+            
+            
+                
+                
+                
+                <li class="m-global-menu__navigation-list-item">
+                    
+                    
+                    <a class="m-global-menu__navigation-list-item-link" href="/hugo-blog/">Home</a>
+                </li>
+            
+                
+                
+                
+                <li class="m-global-menu__navigation-list-item">
+                    
+                    
+                    <a class="m-global-menu__navigation-list-item-link" href="/hugo-blog/about">About</a>
+                </li>
+            
+                
+                
+                
+                <li class="m-global-menu__navigation-list-item">
+                    
+                    
+                    <a class="m-global-menu__navigation-list-item-link" href="/hugo-blog/blog">Blog</a>
+                </li>
+            
+                
+                
+                
+                <li class="m-global-menu__navigation-list-item">
+                    
+                    
+                    <a class="m-global-menu__navigation-list-item-link" href="/hugo-blog/tech">Tech</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </header>
+        <main class="m-main">
+            <div class="m-main-container">
+                <div class="m-content-container">
+                    
+    <article class="m-entry">
+        
+            <div class="m-entry__breadcrumbs">
+                <div class="a-breadcrumbs">
+    
+    
+    
+
+    <ul class="a-breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList" >
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/" itemprop="item" >
+                    
+                        <span itemprop="name">Home</span></span>
+                    
+                    
+                    <meta itemprop="position" content="1" />
+                </a>
+                <span class="a-breadcrumbs__list-item-link-gt">&gt;</span>
+            </li>
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/tech/" itemprop="item" >
+                    
+                        Tech
+                    
+                    
+                    <meta itemprop="position" content="2" />
+                </a>
+                <span class="a-breadcrumbs__list-item-link-gt">&gt;</span>
+            </li>
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" itemprop="item" >
+                    
+                        自分でもよくわからん環境をまとめる話
+                    
+                    
+                    <meta itemprop="position" content="3" />
+                </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        
+        <div class="m-entry__header">
+            <div class="m-entry__header-taxonomies">
+                
+                
+                    <div class="m-entry__header-taxonomies-category">
+                        <span class="m-entry__header-taxonomies-category-title">
+                            <a class="m-entry__header-taxonomies-category-title-link" href="https://fillu87gyc.github.io/hugo-blog/tech/">
+                                Tech
+                            </a>
+                        </span>
+                    </div>
+                
+                
+            </div>
+            <div class="m-entry__header-title">
+                <a class="m-entry__header-title-link" href="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" >
+                    <h1 class="m-entry__header-title-link-text">自分でもよくわからん環境をまとめる話</h1>
+                </a>
+            </div>
+            <div class="m-entry__header-date">
+                <time>2019/09/03</time>
+            </div>
+
+            
+            
+                <div class="m-entry__header-eyecache">
+                    <img class="m-entry__header-eyecache-img" src="https://fillu87gyc.github.io/hugo-blog/images/hoa.1ae84409d92125d78759dd5d4a3cb7e2961bf97555d2486d865b98c53c29e78a.jpg" >
+                </div>
+            
+        </div>
+        <div class="m-entry__content">
+            
+
+<h1 id="初めに">初めに</h1>
+
+<p>windows -&gt; mac -&gt; linux(manjaro)と移動してきて大体思い返せば4年ぐらいの秘伝のソースが出来上がっています。</p>
+
+<p>そうなるとshellだけでもsodだawkだでバコバコ書いたあんまり覚えてないけど無いと動かないコードとか<br />
+毎回環境作り直す時に泣き目を見るアレがあったりと面倒になったので一旦まとめたくなりました</p>
+
+<h2 id="shell">shell</h2>
+
+<p>1年ほど前？にmacを買ったときにshellを((ba)|z)?shの系譜のif/fiだのtestだのに嫌気がさしたり<br />
+ゴテゴテになったbash_profile/bashrcをwindowsから引っ張ってくるので<br />
+pathがバクスラかスラッシュとかで心機一転fishに移動しました</p>
+
+<p>fishの特徴的な部分としては</p>
+
+<ul>
+<li>POSIX互換でないこと</li>
+<li>後発であるためにデフォルトでもちょっと頑張れる</li>
+</ul>
+
+<p>でしょうか。</p>
+
+<p>posix互換でない部分は正直結構うーんって感じですね。<br />
+たまにあるfishだけ未対応とかどうしようもない部分が面倒だなって思いますが、<br />
+有志が互換もどきをつくったりしているのでissueとかgoogle様を信じて検索するのみです。</p>
+
+<p>いいところとしてデフォルトでちょっと強い部分はtab補完が強いなって感じです。<br />
+bashなどのtab補完というより、fuzzyみたいな感じでよしなに補完してくれるのがありがたいです。</p>
+
+<p>では、ここでconfig.fishを公開します。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish"><span class="nb">alias </span><span class="nv">vi</span><span class="o">=</span><span class="s1">&#39;nvim&#39;</span>
+<span class="nb">alias open</span><span class="o">=</span><span class="s1">&#39;thunar&#39;</span>
+
+<span class="nb">status</span> --is-interactive<span class="p">;</span> <span class="k">and</span> <span class="nb">source</span> <span class="o">(</span>rbenv init -<span class="o">|</span><span class="nb">psub</span><span class="o">)</span>
+
+<span class="k">set</span> -g fish_prompt_pwd_dir_length 0
+<span class="k">set</span> -g theme_newline_cursor yes
+<span class="k">set</span> -g theme_display_git_master_branch yes
+<span class="k">set</span> -g GTK_IM_MODULE ibus
+<span class="k">set</span> -g XMODIFIERS @im<span class="o">=</span>ibus
+<span class="k">set</span> -g QT_IM_MODULE ibus
+
+<span class="k">set</span> PATH /home/fill/go/bin <span class="nv">$PATH</span>
+
+<span class="k">function</span> <span class="nb">fish_right_prompt</span><span class="p">;</span> <span class="k">end</span>
+
+<span class="nb">alias </span><span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
+<span class="nb">alias </span><span class="nv">t</span><span class="o">=</span><span class="s1">&#39;tmux&#39;</span>
+<span class="nb">alias </span><span class="nv">tm</span><span class="o">=</span><span class="s1">&#39;tmuximum&#39;</span>
+<span class="nb">alias </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -altFG&#39;</span>
+<span class="nb">alias </span><span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;hub browse&#39;</span>
+<span class="nb">alias </span><span class="nv">gis</span><span class="o">=</span><span class="s1">&#39;hub issue&#39;</span>
+<span class="nb">alias </span><span class="nv">gisc</span><span class="o">=</span><span class="s1">&#39;hub issue create -oc&#39;</span>
+<span class="nb">alias </span><span class="nv">ag</span><span class="o">=</span><span class="s1">&#39;ag --hidden --smart-case&#39;</span>
+<span class="nb">alias </span><span class="nv">reload</span><span class="o">=</span><span class="s1">&#39;source ~/.config/fish/config.fish; and echo reload!!&#39;</span>
+<span class="nb">alias </span><span class="nv">re</span><span class="o">=</span><span class="s1">&#39;reload&#39;</span>
+<span class="nb">alias </span>a.out<span class="o">=</span><span class="s1">&#39;./a.out&#39;</span>
+<span class="nb">alias </span><span class="nv">so</span><span class="o">=</span><span class="s1">&#39;source&#39;</span>
+<span class="nb">alias </span><span class="nv">mkdir</span><span class="o">=</span><span class="s1">&#39;mkdir -p&#39;</span>
+<span class="nb">alias </span><span class="nv">iftop</span><span class="o">=</span><span class="s1">&#39;sudo iftop -i wlp3s0&#39;</span>
+<span class="nb">alias </span><span class="nv">sp</span><span class="o">=</span><span class="s1">&#39;bash ~/src/dotfiles/bin/shell/vim-speedtest.sh&#39;</span>
+<span class="nb">alias </span><span class="nv">gl</span><span class="o">=</span><span class="s1">&#39;git log --color --graph --pretty=format:&#34;%C(red reverse)%d%Creset%C(white reverse) \
+</span><span class="s1">%h% Creset %C(green reverse) %an&lt;@%cn&gt; %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80) \
+</span><span class="s1">%s%Creset%n%n%w(80,2,2)%b&#34; | emojify | less -r&#39;</span>
+<span class="k">function</span> g --wraps git
+  hub <span class="nv">$argv</span><span class="p">;</span>
+<span class="k">end</span></code></pre></div>
+<p>ほとんどaliasなのでほぼデフォルトってわかるかと。プラグインのリストはこんな感じです</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ fisher ls
+0rax/fish-bd
+decors/fish-ghq
+jethrokuan/fzf
+jethrokuan/z
+oh-my-fish/theme-bobthefish</code></pre></div>
+<p>有名どころを入れるだけで特に面倒なことはしていない感じです</p>
+
+<p>fzfはzと組み合わせてディレクトリ移動にしたり、ちょっと深いファイルを編集するのにpath書きたくないんで使っています。<br />
+fish-bdは../..ぐらいで事足りているので最近使っていない&hellip;</p>
+
+<h2 id="tmux">tmux</h2>
+
+<p>tmuxは本当に縁の下の力持ちです。無いと本当にしんどい。
+主な使い方はペインは切らないでwindowアホみたいに作ってバシバシ切り替える感じです。
+thinkpad君は1280*720?なのでペインを切ると改行されまくって感情になるので。</p>
+
+<p>設定は以下のとおりです。</p>
+<div class="highlight"><pre class="chroma"><code class="language-conf" data-lang="conf">run-shell &#34;powerline-daemon -q&#34;
+source &#34;/usr/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf&#34;
+#     
+#     #---general
+set -g default-terminal screen-256color
+set -g terminal-overrides &#39;xterm:colors=256&#39;
+unbind C-b
+set -g prefix C-q
+set -s escape-time 0
+set -g base-index 1
+set -g renumber-windows on
+setw -g pane-base-index 1
+bind r source-file ~/.tmux.conf \; display &#34;Reloaded!&#34;
+
+set-option -g status on
+set-option -g status-interval 1
+set-option -g status-justify &#34;left&#34;
+set-option -g status-left-length 40
+set-option -g status-right-length 100
+## メッセージの表示時間
+set-option -g display-time 1300
+
+#------ペイン/ウィンドウ移動系--------
+bind \ split-window -h -c &#34;#{pane_current_path}&#34;
+bind - split-window -v -c &#34;#{pane_current_path}&#34;
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+bind-key C-w run-shell &#34;tmux next-window||tmux new-window -c #{pane_current_path}&#34;
+setw -g mouse
+
+# -----------------------------------
+set -g pane-border-style        fg=colour242,bg=black
+set -g pane-active-border-style fg=yellow,bg=black
+set -g message-style            fg=white,bg=black,bright
+set -g window-style             fg=colour240,bg=colour232
+set -g window-active-style      fg=white,bg=black
+
+set-window-option -g mode-keys vi</code></pre></div>
+<p>ショートカットはこれ</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">ショートカット</th>
+<th align="center">操作</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">c</td>
+<td align="center">新しいwindow</td>
+</tr>
+
+<tr>
+<td align="center">w</td>
+<td align="center">リスト表示</td>
+</tr>
+
+<tr>
+<td align="center">C-w</td>
+<td align="center">次のwindow OR 新しいwindow</td>
+</tr>
+
+<tr>
+<td align="center">r</td>
+<td align="center">設定ファイル読み込み</td>
+</tr>
+
+<tr>
+<td align="center">t</td>
+<td align="center">時計表示</td>
+</tr>
+
+<tr>
+<td align="center">[</td>
+<td align="center">コピーモード</td>
+</tr>
+
+<tr>
+<td align="center">z</td>
+<td align="center">全画面表示</td>
+</tr>
+</tbody>
+</table>
+
+<p>他にもいろいろあるかもしれないけどつかうのはこれぐらい</p>
+
+<p>tmuximumなるツールがあるので、それを使うと優秀かもしれない</p>
+
+<h2 id="git">git</h2>
+
+<p>とりあえずコンフィグはります</p>
+<div class="highlight"><pre class="chroma"><code class="language-gitconfig" data-lang="gitconfig">[user]
+  name  = fillu87gyc
+  email = XXXXXXXXXXXXXXX@XXXXXXX
+
+[alias]
+  st      = status
+  s       = status
+  cho     = checkout
+  chob    = checkout -b
+  b       = branch
+  p       = push
+  c       = commit
+  today   = log --oneline --since=&#39;15 hour ago&#39;
+  last    = log -1 HEAD
+  d       = diff HEAD
+  mg      = merge
+  ff      = merge --ff
+  db      = !git branch | grep -v &#39;master&#39; | xargs git branch -d 2&gt; /dev/null
+  pin     = push -u origin
+  rename  = commit --amend
+  ref     = reflog
+  delo    = push --delete origin
+  rget    = remote prune origin
+  lg      = log
+  l       = log
+  delcm   = reset --soft HEAD^
+  a       = add .
+[push]
+  default = simple
+
+[filter &#34;lfs&#34;]
+  process = git-lfs filter-process
+  required = true
+  clean   = git-lfs clean -- %f
+  smudge  = git-lfs smudge -- %f
+
+[core]
+  autoCRLF = false
+  editor = &#34;/usr/bin/nvim&#34;
+
+[commit]
+  template = ~/src/dotfiles/git/commit_template
+
+[init]
+  templatedir = ~/src/dotfiles/git/commit_template
+  
+[ghq]
+  root = ~/src
+
+[merge]
+  ff = false
+
+[pull]
+  ff = only</code></pre></div>
+<p>aliasのシェル芸みたいなのはどっかから拝借しています。結構使わないaliasあるので一回整理かなとコピーして思った次第です。</p>
+
+<p>よく使うのは <code>g pin master</code> とか <code>g a</code>(git add .)とか<code>g c</code>とかでしょうか。</p>
+
+<p>個人的に絵文字とか使ってわちゃわちゃしている方が好きなので以下のようなテンプレートをコミットログを打つときに表示させてます。(同一ファイルにあることでvimの補完に現れてくれるのでありがたい)一時期は :octocat: とか使ってたんですけど最近めっきり使わないですね。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">:
+
+
+<span class="c1"># ================= Emojis =================</span>
+<span class="c1"># :bug:                    バグ修正</span>
+<span class="c1"># :heavy_plus_sign:        小さな改良</span>
+<span class="c1"># :wrench:                 ツール導入による変更</span>
+<span class="c1"># :tada:                   盛大に祝うべき大きな機能追加</span>
+<span class="c1"># :construction:           工事中</span>
+<span class="c1"># :recycle:                リファクタリング</span>
+<span class="c1"># :books:                  ドキュメント（Documentation）</span>
+<span class="c1"># :art:                    デザインUI/UX(Accessibility)</span>
+<span class="c1"># :hourglass:              速度計測</span>
+<span class="c1"># :scissors:               機能・関数削除</span>
+<span class="c1"># :octocat:                master にマージ</span>
+<span class="c1"># :arrows_clockwise:       ファイル場所移動</span>
+<span class="c1"># :ambulance:              応急処置</span>
+<span class="c1"># :trollface:              トロールをしてしまった</span></code></pre></div>
+<h2 id="vim">vim</h2>
+
+<p>vimは新しい環境作るときにいい感じになるようにブラッシュアップしてるので結構適当
+とりあえずいつの間にか生えてた縁の下の力持ちから</p>
+
+<p>nvim + dein の<a href="https://github.com/Shougo" rel="nofollow" target="_blank">Shougo</a>様々の構成</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">なまえ</th>
+<th align="center">こうか</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Shougo/dein</td>
+<td align="center">基本ですね</td>
+</tr>
+
+<tr>
+<td align="center">Lokaltog/vim-easymotion</td>
+<td align="center">移動が楽になる奴です。</td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;tpope/vim-fugitive&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;airblade/vim-gitgutter&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;ryanoasis/vim-devicons&rsquo;</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">&lsquo;majutsushi/tagbar&rsquo;</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        <div class="m-entry__footer">
+            <div class="m-entry__footer-sns-buttons">
+                
+                
+                    
+                
+    
+                
+                <a class="m-entry__footer-sns-buttons-icon-hatebu" href="https://b.hatena.ne.jp/my/add.confirm?title=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    B!
+                </a>
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://twitter.com/intent/tweet?text=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter">&nbsp;</i>
+                </a>
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook">&nbsp;</i>
+                </a>
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://getpocket.com/edit?title=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-get-pocket">&nbsp;</i>
+                </a>
+                <a class="m-entry__footer-sns-buttons-icon" href="https://line.me/R/msg/text/?%e8%87%aa%e5%88%86%e3%81%a7%e3%82%82%e3%82%88%e3%81%8f%e3%82%8f%e3%81%8b%e3%82%89%e3%82%93%e7%92%b0%e5%a2%83%e3%82%92%e3%81%be%e3%81%a8%e3%82%81%e3%82%8b%e8%a9%b1%20%7c%20ADS%e3%81%ae%e8%a3%8f%e5%81%b4 https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-line"></i>
+                </a>
+                
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://www.reddit.com/submit?title=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-reddit">&nbsp;</i>
+                </a>
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://www.linkedin.com/shareArticle?mini=true&amp;title=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in">&nbsp;</i>
+                </a>
+                
+                <a class="m-entry__footer-sns-buttons-icon" href="https://pinboard.in/popup_login/?title=%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1&#43;%7C&#43;ADS%E3%81%AE%E8%A3%8F%E5%81%B4&amp;url=https%3A%2F%2Ffillu87gyc.github.io%2Fhugo-blog%2Ftech%2F%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25A7%25E3%2582%2582%25E3%2582%2588%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E8%25A9%25B1%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-thumbtack">&nbsp;</i>
+                </a>
+            </div>
+        </div>
+        <div class="m-entry__page-navigation">
+                 <a class="m-entry__page-navigation-link" href="https://fillu87gyc.github.io/hugo-blog/tech/img/">&lt; prev</a> 
+                 <a class="m-entry__page-navigation-link" href="https://fillu87gyc.github.io/hugo-blog/tech/hugo1/">next &gt; </a> 
+        </div>
+        
+            <div class="m-entry__breadcrumbs">
+                <div class="a-breadcrumbs">
+    
+    
+    
+
+    <ul class="a-breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList" >
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/" itemprop="item" >
+                    
+                        <span itemprop="name">Home</span></span>
+                    
+                    
+                    <meta itemprop="position" content="1" />
+                </a>
+                <span class="a-breadcrumbs__list-item-link-gt">&gt;</span>
+            </li>
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/tech/" itemprop="item" >
+                    
+                        Tech
+                    
+                    
+                    <meta itemprop="position" content="2" />
+                </a>
+                <span class="a-breadcrumbs__list-item-link-gt">&gt;</span>
+            </li>
+        
+            <li class="a-breadcrumbs__list-item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                <a class="a-breadcrumbs__list-item-link" href="https://fillu87gyc.github.io/hugo-blog/tech/%E8%87%AA%E5%88%86%E3%81%A7%E3%82%82%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E7%92%B0%E5%A2%83%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E8%A9%B1/" itemprop="item" >
+                    
+                        自分でもよくわからん環境をまとめる話
+                    
+                    
+                    <meta itemprop="position" content="3" />
+                </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        
+
+    </article>
+    
+
+                </div>
+                <div class="m-aside-container">
+                    <div class="m-aside-widget__profile">
+    <div class="m-aside-widget__profile-avatar">
+        
+        
+            
+        
+        
+            
+                
+            
+        
+        
+            <img class="m-aside-widget__profile-avatar-img" src="https://fillu87gyc.github.io/hugo-blog/images/icon.jpg" />
+        
+    </div>
+    <div class="m-aside-widget__profile-author">
+        
+            結城かえで
+        
+    </div>
+    <div class="m-aside-widget__profile-description">
+        
+            
+            <p>結城かえでです。</p>
+
+<p>仙台の高専(オタク学科があるほうです)の5年目となり老害化が進みます。来年からキラキラ技化大3系となりました。プロコンは3年、ロボコンは実質2年ちょいみたいな中途半端
+Twitter<a href="http://twitter.con/yuuki__kaede" rel="nofollow" target="_blank">(@yuuki__kaede)</a></p>
+
+        
+    </div>
+</div>
+
+    
+        
+        
+        
+    
+
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer class="m-global-footer">
+            <span class="a-copy-right">
+    Copyright 2019
+    結城かえで
+    All rights reserved.
+</span>
+
+
+        </footer>
+    </body>
+</html>
