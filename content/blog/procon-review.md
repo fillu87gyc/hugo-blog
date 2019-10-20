@@ -1,7 +1,7 @@
 ---
 title: "Proconに行った話 day0 移動部門"
 date: 2019-10-16T09:42:34+09:00
-draft: true
+draft: false
 eyecatch: 'images/yosano.jpeg'
 ---
 
