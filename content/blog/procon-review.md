@@ -21,7 +21,7 @@ eyecatch: 'images/yosano.jpeg'
 前日に弊PLが顧問と掛け合って移動日を変更するように掛け合ってみるもうまく行かず、金曜日に移動することに。  
 結局仙台→伊丹→宮崎で移動することになっていたので伊丹がとまるかどうか不安になっていると、不穏になるslack
 
-![不穏なslack](/hugo-blog/images/procon-review/sla.jpg)
+![不穏なslack](/images/procon-review/sla.jpg)
 
 そして　13：30分に伊丹発の便が欠便に。~~この時点で正直諦めていたわけです。~~  
 しかし顧問の力でなんとか便を振替して伊丹で鬼の8時間待機することでなんとか宮崎までの勝ち筋をつくるものの、そもそも伊丹まで行けるのか怪しいし、JRの在来線も十分止まる危険性があり予断を許さない感じでした。
@@ -34,19 +34,19 @@ eyecatch: 'images/yosano.jpeg'
 
 そんななかで迎えた朝ですが、なんとか在来線が動き空港には到着します。
 
-![仙台空港](/hugo-blog/images/procon-review/空港.JPG)
+![仙台空港](/images/procon-review/空港.JPG)
 
 けれど、運行情報を見ると「天候調査後決定」みたいな感じで感情が小さくなっていましたが、なんとか動き飛ぶことに  
 伊丹に着陸できないと判断されたら福岡空港まで行くみたいなこと言われたのでみんなで「悪天候頼むぞ！」みたいな演技でもないことを言っていると搭乗時間になりました。  
 
-![飛ぶよ](/hugo-blog/images/procon-review/tubasa.JPG)
+![飛ぶよ](/images/procon-review/tubasa.JPG)
 
 今回は学校の金なので限界LCCことピーチではなくブルジョアジーよろしくANAに乗ることになりました。  
 ~~ここでオタクなのでアマプラのアニメを見ようと画策していると研究室のボスが隣に座ってきて絶望します~~  
 昔好きだったSPECでも見て時間をつぶすことになります。  
 乗っているとドリンクサービスが始まって、というか、そもそも新幹線みたいに販売かと思ったらサービスで「さすがブルジョアジー‥」なんてしょーもないことを思っていまいた。  
 
-![サービス](/hugo-blog/images/procon-review/kohi.JPG)
+![サービス](/images/procon-review/kohi.JPG)
 
 なんやかんやで伊丹までつくこととなり、限界8時間滞在タイムがスタートします。  
 運行情報のcanceledが並んでるのをみて「よくこれ仙台発飛んだな。。。」みたいなことを思ってました。
@@ -60,7 +60,7 @@ eyecatch: 'images/yosano.jpeg'
 
 始まった8時間限界待機時間はアマプラ消費したり、MJのアカウント紐付けが切れて十段・十段に格下げされててしょぼんとしたり、友人のクソ問題集クイズ大会をして時間をつぶすことに。
  
-![majan](/hugo-blog/images/procon-review/まじゃん.png)  
+![majan](/images/procon-review/まじゃん.png)  
   
 実は空港内のたこ焼きを食べれる可能性があり食べに行ったんですけど台風の影響で短縮営業、しまってました。悲しいね。  
   
@@ -71,21 +71,21 @@ eyecatch: 'images/yosano.jpeg'
   
 そうこう言ってると飛行機に乗る時間になります。  
   
-![mad](/hugo-blog/images/procon-review/mado.JPG)  
+![mad](/images/procon-review/mado.JPG)  
 ~~また隣が指導教員じゃん...~~    
 ANAの座席ラジオから備え付けのTV映像の音声出力がされてることに途中で気づいてニッコリするなどしていると宮崎**ブーゲンビリア**空港に着きます  
   
 ## ついたぞ都城  
   
-![ブーゲン](/hugo-blog/images/procon-review/ぶげん.jpg)  
+![ブーゲン](/images/procon-review/ぶげん.jpg)  
   
 ~~ラブホかよ。。。~~  
   
 バスが来るまでパシャパシャ  
   
-![a](/hugo-blog/images/procon-review/bgen.JPG)  
-![a](/hugo-blog/images/procon-review/buge2.JPG)  
-![a](/hugo-blog/images/procon-review/buge3.JPG)  
+![a](/images/procon-review/bgen.JPG)  
+![a](/images/procon-review/buge2.JPG)  
+![a](/images/procon-review/buge3.JPG)  
   
 ツイッターをしていると地元の台風被害情報が目に付きます。  
   
@@ -94,10 +94,10 @@ ANAの座席ラジオから備え付けのTV映像の音声出力がされてる
   
 バスの販売員の方がアロハだったり、常夏みたいな木があったり個性的な空港をあとにする一行。  
   
-![a](/hugo-blog/images/procon-review/きっぷ.JPG)  
+![a](/images/procon-review/きっぷ.JPG)  
 バスに乗るオタクたち。地元民が数名乗っているので社会性が要求されていました。  
   
-![a](/hugo-blog/images/procon-review/bus.JPG)  
+![a](/images/procon-review/bus.JPG)  
 ばすにゆらゆら1h,ぼけーっとよるの知らない街を見るのって非日常感があってオタクはすごい好きなんですよね。  
   
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オタク、実はバス移動好きです</p>&mdash; 結城かえで🍆 (@yuuki_kaede) <a href="https://twitter.com/yuuki__kaede/status/1183009233509289984?ref_src=twsrc%5Etfw">October 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
@@ -107,7 +107,7 @@ ANAの座席ラジオから備え付けのTV映像の音声出力がされてる
 ツイッターみてたらみんなして教員の金でいい飯を食ってたので文句の一言を言ってしまう。。。  
 都城駅に到着しホテルに向かう一行  
  
-![a](/hugo-blog/images/procon-review/hoteru.JPG)  
+![a](/images/procon-review/hoteru.JPG)  
  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ホテル宿泊部門予選通過です<a href="https://twitter.com/hashtag/procon30?src=hash&amp;ref_src=twsrc%5Etfw">#procon30</a> <a href="https://t.co/1P5iUtQGCN">pic.twitter.com/1P5iUtQGCN</a></p>&mdash; 結城かえで🍆 (@yuuki_kaede) <a href="https://twitter.com/yuuki__kaede/status/1183015176192180225?ref_src=twsrc%5Etfw">October 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
  
@@ -117,7 +117,7 @@ ANAの座席ラジオから備え付けのTV映像の音声出力がされてる
  
 部屋に入るとこんな感じ  
  
-![a](/hugo-blog/images/procon-review/heya.JPG)  
+![a](/images/procon-review/heya.JPG)  
  
 まあ部屋にいるのは寝るときと風呂ぐらいという事前情報があったのでなんの感情も抱かなかったですね。ちょっと景色が残念だったな程度。  
   

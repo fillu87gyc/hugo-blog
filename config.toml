@@ -7,6 +7,7 @@ hasCJKLanguage = true
 pluralizeListTitles = false
 pygmentsUseClasses = true
 pygmentsCodefences = true
+canonifyurls = true
 theme = "basic-design-personal-blog"
 
 [outputs]
@@ -16,6 +17,7 @@ theme = "basic-design-personal-blog"
     profile_image = "images/icon.jpg"
     eyecatch = "images/eyecache.jpg"
     author = "結城かえで"
+	customCSS = "/css/mycss.css"
 
 [taxonomies]
     tag = "tags"

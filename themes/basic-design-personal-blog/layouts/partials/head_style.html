@@ -1,6 +1,8 @@
 {{ $reset := resources.Get "css/reset.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $reset.Permalink }}" />
 
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/mycss.css">
+
 {{ $style := resources.Get "scss/style.scss" | toCSS | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
