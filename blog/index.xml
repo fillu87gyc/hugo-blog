@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on ADSの裏側</title>
+    <link>https://fillu87gyc.github.io/hugo-blog/blog/</link>
+    <description>Recent content in Blog on ADSの裏側</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 16 Oct 2019 09:42:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://fillu87gyc.github.io/hugo-blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proconに行った話 day0 移動部門</title>
+      <link>https://fillu87gyc.github.io/hugo-blog/blog/procon-review/</link>
+      <pubDate>Wed, 16 Oct 2019 09:42:34 +0900</pubDate>
+      
+      <guid>https://fillu87gyc.github.io/hugo-blog/blog/procon-review/</guid>
+      <description>はじめに 今回は13,14日にあったprocon30に参加してきました。 私は3年目にして本戦メンバーとなったわけで5年生のくせに初体験が多い大</description>
+    </item>
+    
+  </channel>
+</rss>
