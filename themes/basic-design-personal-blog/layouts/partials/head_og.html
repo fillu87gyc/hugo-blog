@@ -1,4 +1,4 @@
-
+<!--
 <meta property="og:title" content="{{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}" />
 
 {{ if .IsHome }}
@@ -32,5 +32,11 @@
 {{ with $description }}
     <meta property="og:description" content="{{ $description }}" />
 {{ end }}
-
-
+-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="og:title" content="{{ .Title }}" />
+<meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="og:image" content="{{ .Site.BaseURL }}{{ .Params.eyecatch }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:site" content="@yuuki__kaede" />
+<meta name="twitter:creator" content="@yuuki__kaede" /> 
